@@ -5,9 +5,5 @@
   "description": "Receives Vercel deploy webhooks and forwards them to Discord",
   "scripts": {
     "dev": "vercel dev"
-  },
-  "devDependencies": {
-    "@types/node": "^22",
-    "typescript": "^5"
   }
 }
