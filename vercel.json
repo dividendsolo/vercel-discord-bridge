@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/vercel-webhook.ts": {
+      "maxDuration": 10
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "vercel-discord-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Receives Vercel deploy webhooks and forwards them to Discord",
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
