@@ -67,8 +67,9 @@ export async function POST(req: Request): Promise<Response> {
     await sendToDiscord(event);
     return new Response('Notification sent', { status: 200 });
   } catch (err) {
-    console.error('Failed to send Discord notification:', err);
-    return new Response('Internal error', { status: 500 });
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error('Failed to send Discord notification:', msg);
+    return new Response(`Internal error: ${msg}`, { status: 500 });
   }
 }
 

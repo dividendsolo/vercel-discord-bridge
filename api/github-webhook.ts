@@ -122,7 +122,7 @@ async function sendToDiscord(event: DeploymentStatusEvent) {
     embed.fields.push({ name: 'Description', value: description.slice(0, 200), inline: false });
   }
 
-  const res = await fetch(DISCORD_WEBHOOK_URL, {
+  const res = await fetch(DISCORD_WEBHOOK_URL!, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ embeds: [embed] }),

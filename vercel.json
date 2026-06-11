@@ -1,7 +1,6 @@
 {
   "functions": {
     "api/*.ts": {
-      "runtime": "nodejs@22.x",
       "maxDuration": 10
     }
   }
